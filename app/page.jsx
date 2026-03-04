@@ -4,7 +4,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <Button>Click ME</Button>
+      <form action={"auth/logout"} method="post">
+        <Button>Logout</Button>
+      </form>
     </div>
   );
 }
